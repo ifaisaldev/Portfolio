@@ -14,19 +14,31 @@ export default function Icon() {
             // ImageResponse JSX element
             <div
                 style={{
-                    fontSize: 24,
-                    background: '#2563eb',
                     width: '100%',
                     height: '100%',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
-                    color: 'white',
+                    background: '#2563eb',
                     borderRadius: '50%',
-                    fontWeight: 600,
                 }}
             >
-                FM
+                <div
+                    style={{
+                        fontSize: 16,
+                        background: '#2563eb',
+                        width: '90%',
+                        height: '90%',
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        color: 'white',
+                        borderRadius: '50%',
+                        fontWeight: 600,
+                    }}
+                >
+                    FM
+                </div>
             </div>
         ),
         // ImageResponse options
