@@ -1,0 +1,23 @@
+# Faisal Mehmood - Senior Full Stack Engineer
+
+## Profile
+Senior Full Stack Engineer with over 5 years of experience.
+Specializes in scalable architectures, Node.js, Next.js, and Python data pipelines.
+Based in Haripur, KPK, Pakistan.
+
+## Skills
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Nest.js, Express.js, Python
+- **Database**: MongoDB, PostgreSQL, MySQL
+- **CMS**: WordPress (Custom Themes/Plugins), Headless CMS
+
+## Projects
+- **The Backyard**: Custom CMS replacing WordPress (Next.js, Drizzle ORM).
+- **The National Pulse**: High-traffic news platform (WordPress, Stripe).
+- **21st Century Equipment**: E-commerce platform (Next.js, Headless WP).
+- **Enterprise Data Pipeline**: Airbyte connectors for logging/sentry service (Python).
+
+## Contact
+- **Email**: faisalmehmooddev@gmail.com
+- **LinkedIn**: linkedin.com/in/faisal-mehmood-dev
+- **GitHub**: github.com/ifaisaldev
