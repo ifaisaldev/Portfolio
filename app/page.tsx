@@ -20,7 +20,7 @@ export default function Home() {
             {/* Hero Content */}
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
-                Building Scalable <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">Backend Architectures</span> & Modern Web Solutions
+                Building Scalable <span className="text-[#4FA0FC]">Backend Architectures</span> & Modern Web Solutions
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
                 I am Faisal Mehmood, a Senior Full Stack Engineer. I design and develop high-performance applications using Node.js, Next.js, Python, and robust database systems.
@@ -285,7 +285,7 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <ProjectCard
-              title="The Backyard"
+              title="E-Commerce Project"
               role="Lead Backend Engineer"
               description="A fully custom CMS designed to replace WordPress, significantly reducing long-term costs and improving performance."
               problem="The client needed to move away from a rigid WordPress setup that was becoming costly and slow to scale."
@@ -303,7 +303,7 @@ export default function Home() {
               tech={['WordPress', 'PHP', 'Stripe', 'Paid Memberships Pro']}
             />
             <ProjectCard
-              title="21st Century Equipment"
+              title="E-Commerce Project"
               role="Full Stack Developer"
               description="A comprehensive e-commerce platform for heavy equipment with complex inventory management."
               problem="The existing system lacked advanced filtering and real-time inventory updates."
