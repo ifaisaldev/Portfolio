@@ -75,10 +75,10 @@ export default function Home() {
           </div>
           <div className="prose prose-lg mx-auto text-gray-400">
             <p>
-              I am a Senior Full Stack Engineer with over 5 years of experience in designing and developing scalable, high-performance web applications. My expertise spans the entire stack, from architecting robust backends with Node.js, Nest.js, and Python, to building dynamic, SEO-optimized frontends using Next.js and React.
+              I am a Senior Full Stack Engineer and Framework Architect with over 5 years of experience designing and building scalable, high-performance web applications. I architect robust backends with NestJS, Python/FastAPI, and PostgreSQL, and build dynamic, SEO-optimized frontends using Next.js and React.
             </p>
             <p className="mt-4">
-              I specialize in solving complex engineering challenges, whether it&apos;s building custom data pipelines, optimizing database queries, or re-architecting legacy CMS platforms into modern, headless solutions. My WordPress expertise includes building high-performance custom themes, plugins, and headless WordPress architectures for enterprise clients.
+              I am the lead architect of <strong>Nextly</strong>, an MIT-licensed, TypeScript-native Next.js CMS framework published on npm. My recent work includes building the backend for <strong>Rext AI</strong> (a multi-tenant SaaS on FastAPI), architecting the <strong>4RE Marketing Console</strong> (NestJS + Drizzle ORM), and engineering enterprise WordPress VIP platforms for clients like the <strong>PCI Security Standards Council</strong>.
             </p>
             <p className="mt-4">
               I value clean code, technical ownership, and delivering solutions that drive real business impact.
@@ -99,18 +99,19 @@ export default function Home() {
 
           <div className="space-y-12 border-l-2 border-white/5 md:border-none ml-4 md:ml-0 pl-4 md:pl-0">
             <ExperienceCard
-              title="Lead Backend Engineer"
+              title="Lead Backend Engineer & Release Manager"
               company="Revnix, fmr. Revnix Technologies"
               period="Jan 2024 – Present"
               location="Haripur District, Khyber Pakhtunkhwa, Pakistan"
-              description="Leading backend engineering efforts across multiple high-impact projects, focusing on scalable system design, API development, and cloud deployment."
+              description="Leading backend engineering and release management across multiple high-impact production systems, from multi-tenant SaaS platforms to open-source frameworks."
               highlights={[
-                "Architected and developed scalable backend systems using Node.js, Nest.js, Express, and PostgreSQL/MongoDB.",
-                "Designed and deployed a microservices architecture supporting 50,000+ active users, ensuring high availability.",
-                "Implemented robust CI/CD pipelines with Docker & AWS, improving deployment reliability and system uptime.",
-                "Mentored junior developers, improving team productivity and code quality across the engineering department."
+                "Rext AI: Led backend architecture for a multi-tenant SaaS using Python, FastAPI, and PostgreSQL with async APIs and background jobs.",
+                "4RE Marketing Console: Architected NestJS/Drizzle ORM backend with a sync engine ingesting external dealer and catalog XML feeds.",
+                "Nextly Framework: Lead architect of an MIT-licensed Next.js CMS with multi-database adapters, custom JWT auth, and field-level RBAC.",
+                "21st Century & 4 Rivers Equipment: Led team of 4 to migrate headless eCommerce platforms to Nextly CMS, cutting infra costs by 95%.",
+                "Team Leadership: Managing 8 engineers across 7 production environments serving 50K+ users. Reduced production incidents by 60%."
               ]}
-              tech={['Node.js', 'Nest.js', 'PostgreSQL', 'MongoDB', 'AWS', 'Docker', 'Microservices']}
+              tech={['NestJS', 'FastAPI', 'PostgreSQL', 'Drizzle ORM', 'Docker', 'GitHub Actions']}
             />
 
             <ExperienceCard
@@ -118,14 +119,14 @@ export default function Home() {
               company="Revnix, fmr. Revnix Technologies"
               period="Feb 2022 – Jan 2024"
               location="Haripur District, Khyber Pakhtunkhwa, Pakistan"
-              description="Engineered high-performance WordPress solutions for enterprise and mid-sized clients, focusing on speed, scalability, and custom functionality."
+              description="Engineered high-performance WordPress solutions for enterprise and mid-sized clients, including WordPress VIP multisite platforms."
               highlights={[
-                "Built dynamic eCommerce and membership systems using WooCommerce and Paid Memberships Pro.",
-                "Developed custom themes and plugins with clean architecture principles, achieving 90+ Lighthouse performance scores.",
-                "Created a custom WordPress CMS that reduced plugin dependency by 60%, improving stability and long-term maintainability.",
-                "Delivered optimized REST API integrations for seamless frontend-backend communication."
+                "PCI Security Standards Council (WordPress VIP): Engineered a multi-language, multisite enterprise platform with custom Elementor widgets extending core classes.",
+                "The National Pulse: Built custom WordPress theme for 100K+ monthly pageviews with Stripe, Google Pay, and Apple Pay.",
+                "WP Aegis & WP Grit: Built modern Gutenberg block architecture sites and trained 3 interns on WordPress standards.",
+                "Achieved 90+ Lighthouse scores across 10+ client sites using Redis caching and image optimization."
               ]}
-              tech={['PHP', 'WordPress', 'WooCommerce', 'REST APIs', 'Performance Optimization']}
+              tech={['PHP', 'WordPress VIP', 'Gutenberg', 'REST APIs', 'Stripe', 'Performance Optimization']}
             />
 
             <ExperienceCard
@@ -285,13 +286,13 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
             <ProjectCard
-              title="E-Commerce Project"
-              role="Lead Backend Engineer"
-              description="A fully custom CMS designed to replace WordPress, significantly reducing long-term costs and improving performance."
-              problem="The client needed to move away from a rigid WordPress setup that was becoming costly and slow to scale."
-              solution="Architected a custom CMS using Next.js and Drizzle ORM with role-based access control and multi-database support."
-              impact="Reduced dependency on third-party plugins by 60% and improved site performance scores to 90+."
-              tech={['Next.js', 'Drizzle ORM', 'Node.js', 'Multi-DB Support']}
+              title="Nextly Framework"
+              role="Lead Architect"
+              description="An MIT-licensed, TypeScript-native Next.js CMS and app framework."
+              problem="Needed a scalable, self-hostable alternative to Payload CMS and Strapi with zero vendor lock-in."
+              solution="Designed a multi-database architecture (PostgreSQL, MySQL, SQLite) and a security-first custom JWT auth system with field-level RBAC."
+              impact="Successfully launched 29 releases on npm, actively deployed across 7 production enterprise client sites."
+              tech={['Next.js', 'TypeScript', 'Node.js', 'Drizzle ORM', 'PostgreSQL']}
             />
             <ProjectCard
               title="The National Pulse"
@@ -303,22 +304,31 @@ export default function Home() {
               tech={['WordPress', 'PHP', 'Stripe', 'Paid Memberships Pro']}
             />
             <ProjectCard
-              title="E-Commerce Project"
-              role="Full Stack Developer"
-              description="A comprehensive e-commerce platform for heavy equipment with complex inventory management."
-              problem="The existing system lacked advanced filtering and real-time inventory updates."
-              solution="Built a Headless WordPress solution with Next.js frontend, implementing advanced filtering and Stripe payments."
-              impact="Enhanced user experience with instant filtering and streamlined checkout process."
-              tech={['Next.js', 'Node.js', 'Headless WordPress', 'Stripe', 'Redux']}
+              title="21st Century & 4 Rivers Equipment"
+              role="Lead Backend Engineer"
+              description="Comprehensive e-commerce platforms and a custom marketing console for heavy equipment dealers."
+              problem="The existing systems lacked advanced filtering, real-time inventory updates, and multi-source feed synchronization."
+              solution="Built headless e-commerce solutions (Next.js) and architected a new robust NestJS/Drizzle ORM backend (4RE Marketing Console) for 4 Rivers Equipment to sync external dealer and catalog feeds."
+              impact="Enhanced user experience with instant filtering, unified multi-source data claims, and streamlined checkout."
+              tech={['Next.js', 'NestJS', 'Drizzle ORM', 'PostgreSQL', 'Stripe']}
             />
             <ProjectCard
               title="PCI Security Standards Council"
-              role="Backend Developer"
-              description="A security standards organization requiring a secure and scalable web presence."
-              problem="Required integration with multiple third-party services while maintaining strict security standards."
-              solution="Developed custom REST API integrations and Elementor widgets. Optimized backend logic for security."
-              impact="Ensured secure data handling and improved backend scalability for future growth."
-              tech={['WordPress', 'Elementor', 'REST APIs', 'PHP']}
+              role="Full Stack WordPress Developer"
+              description="A multi-language, multisite enterprise platform on WordPress VIP for the global payment security authority."
+              problem="Required a highly scalable, multi-language platform with strict security compliance and zero third-party plugin bloat."
+              solution="Engineered complex custom Elementor widgets by extending core classes and integrated secure REST APIs to populate dynamic data across multiple site languages."
+              impact="Delivered a performant, enterprise-grade WordPress VIP platform serving a global audience."
+              tech={['WordPress VIP', 'PHP', 'Elementor', 'REST APIs', 'Multisite']}
+            />
+            <ProjectCard
+              title="Rext AI"
+              role="Lead Backend Engineer"
+              description="A multi-tenant SaaS platform."
+              problem="Needed a scalable backend to orchestrate complex data flows, background jobs, and integrations."
+              solution="Led backend architecture using Python, FastAPI, and SQLAlchemy. Developed robust async APIs and integrated external systems (Shopify, WordPress, LemonSqueezy)."
+              impact="Delivered a highly reliable backend system to support automated workflows and complex integrations."
+              tech={['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL']}
             />
             <ProjectCard
               title="Enterprise Data Pipeline"

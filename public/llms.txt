@@ -1,23 +1,31 @@
-# Faisal Mehmood - Senior Full Stack Engineer
+# Faisal Mehmood - Senior Backend Engineer & Framework Architect
 
 ## Profile
-Senior Full Stack Engineer with over 5 years of experience.
-Specializes in scalable architectures, Node.js, Next.js, and Python data pipelines.
+Senior Full Stack Engineer with over 5 years of experience building enterprise web platforms and developer tooling.
+Lead architect of Nextly, an MIT-licensed Next.js CMS framework published on npm.
+Currently leading backend architecture for a team of 8 engineers across 7 production environments serving 50K+ users.
 Based in Haripur, KPK, Pakistan.
 
 ## Skills
-- **Frontend**: React, Next.js, TypeScript, Tailwind CSS
-- **Backend**: Node.js, Nest.js, Express.js, Python
-- **Database**: MongoDB, PostgreSQL, MySQL
-- **CMS**: WordPress (Custom Themes/Plugins), Headless CMS
+- **Frontend**: React, Next.js, TypeScript, Tailwind CSS, Shadcn/UI
+- **Backend**: Node.js, NestJS, Express.js, Python, FastAPI, GraphQL, REST APIs
+- **Database**: PostgreSQL, MongoDB, MySQL, SQLite, Redis, Drizzle ORM, SQLAlchemy
+- **CMS**: Nextly (lead architect), Payload CMS, Strapi, WordPress (VIP, Headless, Custom Themes, Gutenberg)
+- **DevOps**: Docker, AWS, GitHub Actions, Vercel, Coolify, Hetzner VPS
+- **Auth & Security**: JWT, OAuth 2.0, RBAC, Field-level Permissions
 
 ## Projects
-- **The Backyard**: Custom CMS replacing WordPress (Next.js, Drizzle ORM).
-- **The National Pulse**: High-traffic news platform (WordPress, Stripe).
-- **21st Century Equipment**: E-commerce platform (Next.js, Headless WP).
+- **Nextly Framework**: MIT-licensed, TypeScript-native Next.js CMS and app framework (nextlyhq.com).
+- **Rext AI**: Multi-tenant content automation SaaS (Python, FastAPI, PostgreSQL).
+- **4RE Marketing Console**: Marketing console and API backend for 4 Rivers Equipment (NestJS, Drizzle ORM, PostgreSQL).
+- **21st Century & 4 Rivers Equipment**: Headless Next.js e-commerce platforms with Stripe payments.
+- **PCI Security Standards Council**: Enterprise WordPress VIP multisite, multi-language platform.
+- **The National Pulse**: High-traffic news platform with Stripe subscriptions (WordPress).
 - **Enterprise Data Pipeline**: Airbyte connectors for logging/sentry service (Python).
+- **SmartCourse AI**: AI course recommendation engine (Python, Flask, Sentence Transformers).
 
 ## Contact
 - **Email**: faisalmehmooddev@gmail.com
 - **LinkedIn**: linkedin.com/in/faisal-mehmood-dev
 - **GitHub**: github.com/ifaisaldev
+- **Portfolio**: faisalmehmood.tech
