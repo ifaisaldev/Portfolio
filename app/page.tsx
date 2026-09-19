@@ -99,7 +99,7 @@ export default function Home() {
 
           <div className="space-y-12 border-l-2 border-white/5 md:border-none ml-4 md:ml-0 pl-4 md:pl-0">
             <ExperienceCard
-              title="Lead Backend Engineer & Release Manager"
+              title="Lead Backend Engineer"
               company="Revnix, fmr. Revnix Technologies"
               period="Jan 2024 – Present"
               location="Haripur District, Khyber Pakhtunkhwa, Pakistan"
