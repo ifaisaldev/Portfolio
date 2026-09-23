@@ -451,7 +451,7 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
-                  title: 'Tarsal: Log Connectors',
+                  title: 'Log Connectors',
                   summary: 'Python connectors built on the Airbyte framework that pull logs from source platforms and deliver them to different storage providers.',
                   tech: 'Python · Airbyte',
                   links: [],
