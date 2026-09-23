@@ -8,16 +8,19 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: {
-    default: "Faisal Mehmood - Senior Full Stack Engineer",
+    default: "Faisal Mehmood - Senior Backend Engineer",
     template: "%s | Faisal Mehmood"
   },
-  description: "Senior Full Stack Engineer specializing in scalable architectures, Node.js, Next.js, Python, and modern web technologies. Expert in building high-performance applications with focus on E-Commerce, FinTech, and Enterprise SaaS.",
+  description: "Senior Backend Engineer specializing in scalable architectures, Node.js, Next.js, Python, WordPress, and modern web technologies. Expert in building high-performance applications with focus on E-Commerce, FinTech, and Enterprise SaaS.",
   keywords: [
+    "Senior Backend Engineer",
+    "Backend Engineer",
     "Full Stack Engineer",
     "Senior Software Engineer",
     "Node.js Developer",
     "Next.js Expert",
     "Python Developer",
+    "WordPress Developer",
     "React Developer",
     "TypeScript",
     "Scalable Architecture",
@@ -39,24 +42,24 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: "/",
-    title: "Faisal Mehmood - Senior Full Stack Engineer",
-    description: "Senior Full Stack Engineer specializing in scalable architectures, Node.js, Next.js, Python, and modern web technologies.",
+    title: "Faisal Mehmood - Senior Backend Engineer",
+    description: "Senior Backend Engineer specializing in scalable architectures, Node.js, Next.js, Python, WordPress, and modern web technologies.",
     siteName: "Faisal Mehmood Portfolio",
     images: [
       {
-        url: "/hero-banner.png",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Faisal Mehmood - Senior Full Stack Engineer",
+        alt: "Faisal Mehmood - Senior Backend Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Faisal Mehmood - Senior Full Stack Engineer",
-    description: "Senior Full Stack Engineer specializing in scalable architectures, Node.js, Next.js, Python, and modern web technologies.",
+    title: "Faisal Mehmood - Senior Backend Engineer",
+    description: "Senior Backend Engineer specializing in scalable architectures, Node.js, Next.js, Python, WordPress, and modern web technologies.",
     creator: "@ifaisaldev",
-    images: ["/hero-banner.png"],
+    images: ["/og-image.png"],
   },
   robots: {
     index: true,
