@@ -79,7 +79,7 @@ export default function Home() {
               I am a Senior Backend Engineer with over 5 years of experience designing and building scalable, high-performance web applications. I architect robust backends with NestJS, Python/FastAPI, and PostgreSQL, and deliver across the full stack with dynamic, SEO-optimized frontends using Next.js and React.
             </p>
             <p className="mt-4">
-              I am the lead contributor to <strong>Nextly</strong>, an MIT-licensed, TypeScript-native Next.js CMS framework published on npm. My recent work includes building the backend for <strong>Rext AI</strong> (a multi-tenant SaaS on FastAPI), architecting the <strong>4RE Marketing Console</strong> (NestJS + Drizzle ORM), and engineering enterprise WordPress VIP platforms for clients like the <strong>PCI Security Standards Council</strong>.
+              I am the lead contributor to <strong>Nextly</strong>, an MIT-licensed, TypeScript-native CMS for Next.js, published on npm. My recent work includes building the backend for <strong>Rext AI</strong> (a multi-tenant SaaS on FastAPI), architecting the <strong>4RE Marketing Console</strong> (NestJS + Drizzle ORM), and engineering enterprise WordPress VIP platforms for clients like the <strong>PCI Security Standards Council</strong>.
             </p>
             <p className="mt-4">
               I value clean code, technical ownership, and delivering solutions that drive real business impact.
@@ -108,7 +108,7 @@ export default function Home() {
               highlights={[
                 "Rext AI: Led backend architecture for a multi-tenant SaaS using Python, FastAPI, and PostgreSQL with async APIs and background jobs.",
                 "4RE Marketing Console: Architected NestJS/Drizzle ORM backend with a sync engine ingesting external dealer and catalog XML feeds.",
-                "Nextly Framework: Lead contributor to an MIT-licensed Next.js CMS. Designed multi-database adapters, JWT auth with token rotation, and field-level RBAC; run release governance for every npm release.",
+                "Nextly CMS: Lead contributor to an open-source CMS for Next.js. Designed multi-database adapters, JWT auth with token rotation, and field-level RBAC; run release governance for every npm release.",
                 "21st Century & 4 Rivers Equipment: Led team of 4 to migrate headless eCommerce platforms to Nextly CMS, cutting infra costs by 95%.",
                 "Team Leadership: Managing 8 engineers across 7 production environments serving 50K+ users. Reduced production incidents by 60%."
               ]}
@@ -376,10 +376,10 @@ export default function Home() {
               }
             />
             <ProjectCard
-              title="Nextly"
+              title="Nextly CMS"
               role="Lead Contributor"
               status="open-source"
-              summary="Open-source, TypeScript-native CMS and app framework for Next.js. Self-hosted, with no vendor lock-in."
+              summary="Open-source, TypeScript-native CMS for Next.js. Self-hosted, with no vendor lock-in."
               points={[
                 "Database adapters for PostgreSQL, MySQL and SQLite",
                 "JWT auth with token rotation, OAuth and field-level permissions",
