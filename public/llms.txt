@@ -17,7 +17,7 @@ Based in Haripur, Pakistan. Works remotely and is available across all time zone
 
 ## Projects
 - **Nextly CMS**: MIT-licensed, TypeScript-native CMS for Next.js (nextlyhq.com).
-- **Rext AI**: Multi-tenant content automation SaaS (Python, FastAPI, PostgreSQL).
+- **Rext AI**: Multi-tenant AI content-writing SaaS. Led the FastAPI/PostgreSQL backend: platform and workspace RBAC, session impersonation, audit logs, subscription billing, workspace credit sharing, Redis caching, webhooks, background jobs, monitoring and CI/CD.
 - **4RE Marketing Console**: Marketing console and API backend for 4 Rivers Equipment (NestJS, Drizzle ORM, PostgreSQL).
 - **21st Century & 4 Rivers Equipment**: Headless Next.js e-commerce platforms with Stripe payments.
 - **PCI Security Standards Council**: Enterprise WordPress VIP multisite, multi-language platform.
