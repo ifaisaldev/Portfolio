@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, Server, Globe, Database, Layout, Code, Terminal, Layers, Cpu } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Server, Globe, Database, Layout, Code, Terminal, Layers, Cpu, Bot, FolderOpen, ListChecks, FlaskConical } from 'lucide-react';
 import ServiceCard from '@/components/ServiceCard';
 import ProjectCard from '@/components/ProjectCard';
 import ExperienceCard from '@/components/ExperienceCard';
+import FlowDiagram from '@/components/FlowDiagram';
 
 export default function Home() {
   return (
@@ -23,7 +24,7 @@ export default function Home() {
                 Building Scalable <span className="text-[#4FA0FC]">Backend Architectures</span> & Modern Web Solutions
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
-                I am Faisal Mehmood, a Senior Full Stack Engineer. I design and develop high-performance applications using Node.js, Next.js, Python, and robust database systems.
+                I am Faisal Mehmood, a Senior Backend Engineer. I design and develop high-performance applications using Node.js, Next.js, Python, WordPress, and robust database systems.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
@@ -75,10 +76,10 @@ export default function Home() {
           </div>
           <div className="prose prose-lg mx-auto text-gray-400">
             <p>
-              I am a Senior Full Stack Engineer and Framework Architect with over 5 years of experience designing and building scalable, high-performance web applications. I architect robust backends with NestJS, Python/FastAPI, and PostgreSQL, and build dynamic, SEO-optimized frontends using Next.js and React.
+              I am a Senior Backend Engineer with over 5 years of experience designing and building scalable, high-performance web applications. I architect robust backends with NestJS, Python/FastAPI, and PostgreSQL, and deliver across the full stack with dynamic, SEO-optimized frontends using Next.js and React.
             </p>
             <p className="mt-4">
-              I am the lead architect of <strong>Nextly</strong>, an MIT-licensed, TypeScript-native Next.js CMS framework published on npm. My recent work includes building the backend for <strong>Rext AI</strong> (a multi-tenant SaaS on FastAPI), architecting the <strong>4RE Marketing Console</strong> (NestJS + Drizzle ORM), and engineering enterprise WordPress VIP platforms for clients like the <strong>PCI Security Standards Council</strong>.
+              I am the lead contributor to <strong>Nextly</strong>, an MIT-licensed, TypeScript-native Next.js CMS framework published on npm. My recent work includes building the backend for <strong>Rext AI</strong> (a multi-tenant SaaS on FastAPI), architecting the <strong>4RE Marketing Console</strong> (NestJS + Drizzle ORM), and engineering enterprise WordPress VIP platforms for clients like the <strong>PCI Security Standards Council</strong>.
             </p>
             <p className="mt-4">
               I value clean code, technical ownership, and delivering solutions that drive real business impact.
@@ -107,7 +108,7 @@ export default function Home() {
               highlights={[
                 "Rext AI: Led backend architecture for a multi-tenant SaaS using Python, FastAPI, and PostgreSQL with async APIs and background jobs.",
                 "4RE Marketing Console: Architected NestJS/Drizzle ORM backend with a sync engine ingesting external dealer and catalog XML feeds.",
-                "Nextly Framework: Lead architect of an MIT-licensed Next.js CMS with multi-database adapters, custom JWT auth, and field-level RBAC.",
+                "Nextly Framework: Lead contributor to an MIT-licensed Next.js CMS. Designed multi-database adapters, JWT auth with token rotation, and field-level RBAC; run release governance for every npm release.",
                 "21st Century & 4 Rivers Equipment: Led team of 4 to migrate headless eCommerce platforms to Nextly CMS, cutting infra costs by 95%.",
                 "Team Leadership: Managing 8 engineers across 7 production environments serving 50K+ users. Reduced production incidents by 60%."
               ]}
@@ -259,7 +260,20 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="glass p-6 rounded-lg md:col-span-2">
+            <div className="glass p-6 rounded-lg">
+              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
+                <Bot className="mr-2 text-cyan-400" /> AI-Assisted Development
+              </h3>
+              <div className="flex flex-wrap gap-2">
+                {['Claude Code', 'Cursor', 'Codex', 'GLM', 'CodeRabbit', 'Greptile', 'Context Engineering', 'Test-Driven Development'].map(skill => (
+                  <span key={skill} className="px-3 py-1 bg-cyan-500/10 text-cyan-300 rounded-full text-sm font-medium border border-cyan-500/20">
+                    {skill}
+                  </span>
+                ))}
+              </div>
+            </div>
+
+            <div className="glass p-6 rounded-lg">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center">
                 <Globe className="mr-2 text-pink-400" /> Industry & Domain
               </h3>
@@ -275,6 +289,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How I Work Section */}
+      <section id="how-i-work" className="py-20">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="lg:text-center mb-12">
+            <h2 className="text-base text-blue-400 font-semibold tracking-wide uppercase">How I Work</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+              AI-Assisted, Test-Driven Development
+            </p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <ServiceCard
+              title="Context First"
+              description="Every project starts with a context folder: findings, plans, decisions and rules. AI agents and teammates work from the same source of truth."
+              icon={FolderOpen}
+            />
+            <ServiceCard
+              title="Planned in Phases"
+              description="Work is split into phases and tasks, tracked from an overview down to each task, so every change has a clear scope and status."
+              icon={ListChecks}
+            />
+            <ServiceCard
+              title="Tests First"
+              description="I follow test-driven development: tests describe the behaviour before the code exists, and a task is done when its tests pass."
+              icon={FlaskConical}
+            />
+            <ServiceCard
+              title="Guided AI Agents"
+              description="Claude Code, Cursor, Codex and GLM work from the project's rules and a shared memory file. CodeRabbit and Greptile review the pull requests."
+              icon={Bot}
+            />
+          </div>
+        </div>
+      </section>
+
       {/* Projects Section */}
       <section id="projects" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -284,61 +332,163 @@ export default function Home() {
               Featured Work
             </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ProjectCard
-              title="Nextly Framework"
-              role="Lead Architect"
-              description="An MIT-licensed, TypeScript-native Next.js CMS and app framework."
-              problem="Needed a scalable, self-hostable alternative to Payload CMS and Strapi with zero vendor lock-in."
-              solution="Designed a multi-database architecture (PostgreSQL, MySQL, SQLite) and a security-first custom JWT auth system with field-level RBAC."
-              impact="Successfully launched 29 releases on npm, actively deployed across 7 production enterprise client sites."
-              tech={['Next.js', 'TypeScript', 'Node.js', 'Drizzle ORM', 'PostgreSQL']}
+              featured
+              title="Rext AI"
+              role="Lead Backend Engineer"
+              status="live"
+              summary="An AI writing platform that researches, writes and publishes SEO articles for agencies and site owners. I led the backend around the AI pipeline: the APIs, background jobs, billing and publishing."
+              points={[
+                "Multi-tenant FastAPI backend with async APIs on PostgreSQL (SQLAlchemy)",
+                "Background jobs with APScheduler, including scheduled publishing",
+                "Subscription billing and checkout with LemonSqueezy",
+                "Publishing to WordPress (REST API) and Shopify (App Bridge)",
+              ]}
+              tech={['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'APScheduler', 'LemonSqueezy']}
+              links={[{ label: 'rext.ai', href: 'https://rext.ai' }]}
+              image={{ src: '/projects/rext-ai.png', alt: 'Rext AI homepage' }}
             />
             <ProjectCard
-              title="The National Pulse"
-              role="Full Stack Developer"
-              description="A high-traffic news platform requiring a robust subscription model and payment integration."
-              problem="Needed a seamless way to handle subscriptions and payments for a growing user base."
-              solution="Integrated Paid Memberships Pro with Stripe, Google Pay, and Apple Pay. Developed a custom theme for optimal speed."
-              impact="Successfully supported a large user base with secure payment processing and fast load times."
-              tech={['WordPress', 'PHP', 'Stripe', 'Paid Memberships Pro']}
+              featured
+              title="4RE Marketing Console"
+              role="Lead Backend Engineer"
+              period="2024 – present"
+              status="private"
+              summary="Inventory and publishing platform for 4 Rivers Equipment, a John Deere dealer. It brings the dealer's inventory feed and the John Deere catalog into one database and serves clean product data to the storefront."
+              points={[
+                "Sync engine that imports the dealer's XML inventory feed and the John Deere catalog on a schedule",
+                "Matching rules that decide which listing owns each machine, so nothing is listed twice",
+                "Materialized product data served to the Next.js storefront through an API",
+              ]}
+              tech={['NestJS', 'TypeScript', 'Drizzle ORM', 'PostgreSQL']}
+              visual={
+                <FlowDiagram
+                  label="4RE Marketing Console data flow"
+                  rows={[
+                    [{ label: 'Dealer inventory', detail: 'XML feed' }, { label: 'John Deere catalog', detail: 'Product API' }],
+                    [{ label: 'Sync engine', detail: 'Scheduled imports' }],
+                    [{ label: 'Matching rules', detail: 'One machine, one listing' }],
+                    [{ label: 'Product API', detail: 'Materialized products' }],
+                    [{ label: 'Next.js storefront' }],
+                  ]}
+                />
+              }
+            />
+            <ProjectCard
+              title="Nextly"
+              role="Lead Contributor"
+              status="open-source"
+              summary="Open-source, TypeScript-native CMS and app framework for Next.js. Self-hosted, with no vendor lock-in."
+              points={[
+                "Database adapters for PostgreSQL, MySQL and SQLite",
+                "JWT auth with token rotation, OAuth and field-level permissions",
+                "Pluggable file storage (S3, R2, Vercel Blob, UploadThing)",
+                "Runs in production on client sites, including 21st Century and 4 Rivers Equipment",
+              ]}
+              tech={['Next.js', 'TypeScript', 'Node.js', 'Drizzle ORM', 'PostgreSQL']}
+              links={[
+                { label: 'nextlyhq.com', href: 'https://nextlyhq.com' },
+                { label: 'GitHub', href: 'https://github.com/nextlyhq/nextly' },
+                { label: 'npm', href: 'https://www.npmjs.com/package/nextly' },
+              ]}
+              image={{ src: '/projects/nextly.png', alt: 'Nextly website homepage' }}
             />
             <ProjectCard
               title="21st Century & 4 Rivers Equipment"
               role="Lead Backend Engineer"
-              description="Comprehensive e-commerce platforms and a custom marketing console for heavy equipment dealers."
-              problem="The existing systems lacked advanced filtering, real-time inventory updates, and multi-source feed synchronization."
-              solution="Built headless e-commerce solutions (Next.js) and architected a new robust NestJS/Drizzle ORM backend (4RE Marketing Console) for 4 Rivers Equipment to sync external dealer and catalog feeds."
-              impact="Enhanced user experience with instant filtering, unified multi-source data claims, and streamlined checkout."
-              tech={['Next.js', 'NestJS', 'Drizzle ORM', 'PostgreSQL', 'Stripe']}
+              status="live"
+              summary="Headless e-commerce sites for two John Deere dealers, first built on headless WordPress and later moved to Nextly."
+              points={[
+                "Next.js storefronts with Stripe payments and filtering across 1,000+ SKUs",
+                "Led a team of 4 engineers moving both sites from headless WordPress to Nextly",
+                "Cut CMS infrastructure and licensing costs by about 95%",
+              ]}
+              tech={['Next.js', 'Nextly', 'Stripe', 'Zustand']}
+              links={[
+                { label: '21st Century Equipment', href: 'https://21stcenturyequipment.com' },
+                { label: '4 Rivers Equipment', href: 'https://4riversequipment.com' },
+              ]}
+              image={{ src: '/projects/21st-century-equipment.png', alt: '21st Century Equipment homepage' }}
             />
             <ProjectCard
               title="PCI Security Standards Council"
               role="Full Stack WordPress Developer"
-              description="A multi-language, multisite enterprise platform on WordPress VIP for the global payment security authority."
-              problem="Required a highly scalable, multi-language platform with strict security compliance and zero third-party plugin bloat."
-              solution="Engineered complex custom Elementor widgets by extending core classes and integrated secure REST APIs to populate dynamic data across multiple site languages."
-              impact="Delivered a performant, enterprise-grade WordPress VIP platform serving a global audience."
+              status="live"
+              summary="Multi-language, multisite platform on WordPress VIP for the global payment-security standards body."
+              points={[
+                "Custom Elementor widgets built by extending Elementor's core classes",
+                "Secure REST API integrations that load dynamic data across every language site",
+                "Built without third-party plugin bloat to meet strict security requirements",
+              ]}
               tech={['WordPress VIP', 'PHP', 'Elementor', 'REST APIs', 'Multisite']}
+              links={[{ label: 'pcisecuritystandards.org', href: 'https://www.pcisecuritystandards.org' }]}
+              image={{ src: '/projects/pci-ssc.png', alt: 'PCI Security Standards Council homepage' }}
             />
             <ProjectCard
-              title="Rext AI"
-              role="Lead Backend Engineer"
-              description="A multi-tenant SaaS platform."
-              problem="Needed a scalable backend to orchestrate complex data flows, background jobs, and integrations."
-              solution="Led backend architecture using Python, FastAPI, and SQLAlchemy. Developed robust async APIs and integrated external systems (Shopify, WordPress, LemonSqueezy)."
-              impact="Delivered a highly reliable backend system to support automated workflows and complex integrations."
-              tech={['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL']}
+              title="The National Pulse"
+              role="Full Stack WordPress Developer"
+              status="live"
+              summary="Custom WordPress theme and paid membership system for a news site with 100K+ monthly pageviews."
+              points={[
+                "Memberships with Paid Memberships Pro, Stripe, Apple Pay and Google Pay",
+                "Custom theme and Gutenberg blocks tuned for Core Web Vitals, with LCP under 2 seconds",
+              ]}
+              tech={['WordPress', 'PHP', 'Paid Memberships Pro', 'Stripe', 'Gutenberg']}
+              links={[{ label: 'thenationalpulse.com', href: 'https://thenationalpulse.com' }]}
+              image={{ src: '/projects/national-pulse.png', alt: 'The National Pulse membership page' }}
             />
-            <ProjectCard
-              title="Enterprise Data Pipeline"
-              role="Python Backend Engineer"
-              description="Core connector development for a high-volume logging and monitoring product."
-              problem="The platform needed reliable, high-throughput data ingestion from various sources for error tracking."
-              solution="Developed custom Airbyte connectors using Python to streamline data pipelines for the logging service."
-              impact="Significantly improved data reliability and observability for enterprise clients."
-              tech={['Python', 'Airbyte', 'Data Engineering', 'ETL']}
-            />
+          </div>
+
+          <div className="mt-16">
+            <h3 className="text-lg font-semibold text-white mb-6">More work</h3>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              {[
+                {
+                  title: 'Tarsal: Log Connectors',
+                  summary: 'Python connectors built on the Airbyte framework that pull logs from source platforms and deliver them to different storage providers.',
+                  tech: 'Python · Airbyte',
+                  links: [],
+                },
+                {
+                  title: 'SmartCourse AI',
+                  summary: 'Course recommender that compares keyword search (TF-IDF) with semantic search (Sentence Transformers).',
+                  tech: 'Python · Flask · scikit-learn',
+                  links: [{ label: 'GitHub', href: 'https://github.com/ifaisaldev/smartcourse-ai' }],
+                },
+                {
+                  title: 'WP Aegis & WP Grit',
+                  summary: 'Two WordPress sites built from scratch with Gutenberg blocks and full-site editing (theme.json).',
+                  tech: 'WordPress · PHP · Gutenberg',
+                  links: [
+                    { label: 'wpaegis.com', href: 'https://wpaegis.com' },
+                    { label: 'wpgrit.com', href: 'https://www.wpgrit.com' },
+                  ],
+                },
+              ].map((item) => (
+                <div key={item.title} className="glass rounded-lg p-5 flex flex-col">
+                  <h4 className="font-semibold text-white">{item.title}</h4>
+                  <p className="mt-2 text-sm text-gray-400 leading-relaxed">{item.summary}</p>
+                  <p className="mt-3 text-xs text-gray-400">{item.tech}</p>
+                  {item.links.length > 0 && (
+                    <div className="mt-auto pt-4 flex flex-wrap gap-x-4 gap-y-1">
+                      {item.links.map((link) => (
+                        <a
+                          key={link.href}
+                          href={link.href}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                        >
+                          {link.label}
+                          <ArrowUpRight className="ml-1 h-4 w-4" />
+                        </a>
+                      ))}
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

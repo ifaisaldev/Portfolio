@@ -1,8 +1,8 @@
-# Faisal Mehmood - Senior Backend Engineer & Framework Architect
+# Faisal Mehmood - Senior Backend Engineer & Nextly Lead Contributor
 
 ## Profile
-Senior Full Stack Engineer with over 5 years of experience building enterprise web platforms and developer tooling.
-Lead architect of Nextly, an MIT-licensed Next.js CMS framework published on npm.
+Senior Backend Engineer with over 5 years of experience building enterprise web platforms and developer tooling across the full stack.
+Lead contributor to Nextly, an MIT-licensed Next.js CMS framework published on npm.
 Currently leading backend architecture for a team of 8 engineers across 7 production environments serving 50K+ users.
 Based in Haripur, KPK, Pakistan.
 
@@ -10,9 +10,10 @@ Based in Haripur, KPK, Pakistan.
 - **Frontend**: React, Next.js, TypeScript, Tailwind CSS, Shadcn/UI
 - **Backend**: Node.js, NestJS, Express.js, Python, FastAPI, GraphQL, REST APIs
 - **Database**: PostgreSQL, MongoDB, MySQL, SQLite, Redis, Drizzle ORM, SQLAlchemy
-- **CMS**: Nextly (lead architect), Payload CMS, Strapi, WordPress (VIP, Headless, Custom Themes, Gutenberg)
+- **CMS**: Nextly (lead contributor), Payload CMS, Strapi, WordPress (VIP, Headless, Custom Themes, Gutenberg)
 - **DevOps**: Docker, AWS, GitHub Actions, Vercel, Coolify, Hetzner VPS
 - **Auth & Security**: JWT, OAuth 2.0, RBAC, Field-level Permissions
+- **AI-Assisted Development**: Claude Code, Cursor, Codex, GLM, CodeRabbit and Greptile (code review), context engineering, test-driven development
 
 ## Projects
 - **Nextly Framework**: MIT-licensed, TypeScript-native Next.js CMS and app framework (nextlyhq.com).
