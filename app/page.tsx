@@ -109,7 +109,7 @@ export default function Home() {
               location="Haripur, Pakistan"
               description="Lead backend engineering and releases across production systems, from a multi-tenant SaaS to an open-source CMS."
               highlights={[
-                "Rext AI: Led the backend for a multi-tenant AI content-writing SaaS on Python, FastAPI and PostgreSQL: async APIs, background jobs, billing and publishing integrations.",
+                "Rext AI: Led the backend for a multi-tenant AI content-writing SaaS on Python, FastAPI and PostgreSQL: platform and workspace RBAC, session impersonation, audit logs, subscription billing, workspace credit sharing, Redis caching, webhooks, background jobs, monitoring and CI/CD.",
                 "4RE Marketing Console: Architected the NestJS/Drizzle ORM backend that replaced 4 Rivers Equipment's legacy console, live in production since June 2026, with a sync engine for dealer inventory and the John Deere catalog.",
                 "Nextly CMS: Lead contributor to an open-source CMS for Next.js. Designed multi-database adapters, JWT auth with token rotation, and field-level RBAC; run release governance for every npm release.",
                 "21st Century & 4 Rivers Equipment: Led team of 4 to migrate headless eCommerce platforms to Nextly CMS, cutting infra costs by 95%.",
@@ -342,12 +342,13 @@ export default function Home() {
               status="live"
               summary="An AI writing platform that researches, writes and publishes SEO articles for agencies and site owners. I led the backend around the AI pipeline: the APIs, background jobs, billing and publishing."
               points={[
-                "Multi-tenant FastAPI backend with async APIs on PostgreSQL (SQLAlchemy)",
-                "Background jobs with APScheduler, including scheduled publishing",
-                "Subscription billing and checkout with LemonSqueezy",
-                "Publishing to WordPress (REST API) and Shopify (App Bridge)",
+                "Multi-tenant FastAPI backend on PostgreSQL with two-level RBAC: platform roles and workspace roles",
+                "Admin session impersonation and audit logs",
+                "Subscription billing with LemonSqueezy, and credit sharing from workspace owners to their members",
+                "Background jobs (APScheduler), Redis caching, webhooks and monitoring",
+                "Publishing to WordPress and Shopify; Docker deployments with GitHub Actions CI/CD",
               ]}
-              tech={['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'APScheduler', 'LemonSqueezy']}
+              tech={['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'Redis', 'APScheduler', 'LemonSqueezy', 'Docker', 'GitHub Actions']}
               links={[{ label: 'rext.ai', href: 'https://rext.ai' }]}
               image={{ src: '/projects/rext-ai.png', alt: 'Rext AI homepage' }}
             />
