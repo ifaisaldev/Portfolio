@@ -21,10 +21,13 @@ export default function Home() {
             {/* Hero Content */}
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
+                <span className="block text-base md:text-lg font-semibold tracking-wide text-blue-400 mb-4">
+                  Faisal Mehmood · Senior Backend Engineer
+                </span>
                 Building Scalable <span className="text-[#4FA0FC]">Backend Architectures</span> & Modern Web Solutions
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
-                I am Faisal Mehmood, a Senior Backend Engineer. I build APIs, data sync engines and CMS platforms with Node.js, NestJS, Next.js, Python and WordPress.
+                I build APIs, data sync engines and CMS platforms with Node.js, NestJS, Next.js, Python and WordPress.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link

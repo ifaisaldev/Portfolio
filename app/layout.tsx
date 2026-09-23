@@ -1,40 +1,43 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL, personJsonLd } from "@/lib/site";
 
 const inter = Inter({ subsets: ["latin"] });
 
+export const viewport: Viewport = {
+  themeColor: "#0f172a",
+};
+
 export const metadata: Metadata = {
   title: {
-    default: "Faisal Mehmood - Senior Backend Engineer",
+    default: SITE_TITLE,
     template: "%s | Faisal Mehmood"
   },
-  description: "Senior Backend Engineer specializing in Node.js, NestJS, Next.js, Python and WordPress. Builds APIs, data sync engines and CMS platforms for e-commerce, media and SaaS teams. Remote, available across all time zones.",
+  description: SITE_DESCRIPTION,
   keywords: [
+    "Faisal Mehmood",
     "Senior Backend Engineer",
     "Backend Engineer",
-    "Full Stack Engineer",
-    "Senior Software Engineer",
+    "Remote Backend Engineer",
     "Node.js Developer",
-    "Next.js Expert",
+    "NestJS Developer",
+    "Next.js Developer",
     "Python Developer",
+    "FastAPI Developer",
     "WordPress Developer",
-    "React Developer",
+    "Full Stack Engineer",
     "TypeScript",
-    "Scalable Architecture",
-    "E-Commerce Development",
-    "FinTech Solutions",
-    "Enterprise SaaS",
-    "Web Development",
-    "Software Engineering",
-    "Faisal Mehmood"
+    "PostgreSQL",
+    "Headless CMS",
+    "Nextly CMS"
   ],
-  authors: [{ name: "Faisal Mehmood" }],
+  authors: [{ name: "Faisal Mehmood", url: SITE_URL }],
   creator: "Faisal Mehmood",
   publisher: "Faisal Mehmood",
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || 'https://faisalmehmood.tech'),
+  metadataBase: new URL(SITE_URL),
   alternates: {
     canonical: '/',
   },
@@ -86,6 +89,10 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd).replace(/</g, "\\u003c") }}
+        />
         <Navbar />
         <main className="min-h-screen pt-16">
           {children}
