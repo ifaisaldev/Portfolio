@@ -2,9 +2,9 @@
 
 ## Profile
 Senior Backend Engineer with over 5 years of experience building enterprise web platforms and developer tooling across the full stack.
-Lead contributor to Nextly, an MIT-licensed Next.js CMS framework published on npm.
+Lead contributor to Nextly, an open-source CMS for Next.js published on npm.
 Currently leading backend architecture for a team of 8 engineers across 7 production environments serving 50K+ users.
-Based in Haripur, KPK, Pakistan.
+Based in Haripur, Pakistan. Works remotely and is available across all time zones.
 
 ## Skills
 - **Frontend**: React, Next.js, TypeScript, Tailwind CSS, Shadcn/UI
@@ -16,8 +16,8 @@ Based in Haripur, KPK, Pakistan.
 - **AI-Assisted Development**: Claude Code, Cursor, Codex, GLM, CodeRabbit and Greptile (code review), context engineering, test-driven development
 
 ## Projects
-- **Nextly Framework**: MIT-licensed, TypeScript-native Next.js CMS and app framework (nextlyhq.com).
-- **Rext AI**: Multi-tenant content automation SaaS (Python, FastAPI, PostgreSQL).
+- **Nextly CMS**: MIT-licensed, TypeScript-native CMS for Next.js (nextlyhq.com).
+- **Rext AI**: Multi-tenant AI content-writing SaaS. Led the FastAPI/PostgreSQL backend: platform and workspace RBAC, session impersonation, audit logs, subscription billing, workspace credit sharing, Redis caching, webhooks, background jobs, monitoring and CI/CD.
 - **4RE Marketing Console**: Marketing console and API backend for 4 Rivers Equipment (NestJS, Drizzle ORM, PostgreSQL).
 - **21st Century & 4 Rivers Equipment**: Headless Next.js e-commerce platforms with Stripe payments.
 - **PCI Security Standards Council**: Enterprise WordPress VIP multisite, multi-language platform.

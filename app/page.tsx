@@ -21,10 +21,13 @@ export default function Home() {
             {/* Hero Content */}
             <div className="flex-1 text-center lg:text-left">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
+                <span className="block text-base md:text-lg font-semibold tracking-wide text-blue-400 mb-4">
+                  Faisal Mehmood · Senior Backend Engineer
+                </span>
                 Building Scalable <span className="text-[#4FA0FC]">Backend Architectures</span> & Modern Web Solutions
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
-                I am Faisal Mehmood, a Senior Backend Engineer. I design and develop high-performance applications using Node.js, Next.js, Python, WordPress, and robust database systems.
+                I build APIs, data sync engines and CMS platforms with Node.js, NestJS, Next.js, Python and WordPress.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
                 <Link
@@ -76,13 +79,13 @@ export default function Home() {
           </div>
           <div className="prose prose-lg mx-auto text-gray-400">
             <p>
-              I am a Senior Backend Engineer with over 5 years of experience designing and building scalable, high-performance web applications. I architect robust backends with NestJS, Python/FastAPI, and PostgreSQL, and deliver across the full stack with dynamic, SEO-optimized frontends using Next.js and React.
+              I am a Senior Backend Engineer with over 5 years at Revnix, where I was promoted from Frontend Engineer to Lead Backend Engineer. I build backends with NestJS, Python/FastAPI and PostgreSQL, and ship full-stack features with Next.js, React and WordPress.
             </p>
             <p className="mt-4">
-              I am the lead contributor to <strong>Nextly</strong>, an MIT-licensed, TypeScript-native Next.js CMS framework published on npm. My recent work includes building the backend for <strong>Rext AI</strong> (a multi-tenant SaaS on FastAPI), architecting the <strong>4RE Marketing Console</strong> (NestJS + Drizzle ORM), and engineering enterprise WordPress VIP platforms for clients like the <strong>PCI Security Standards Council</strong>.
+              I am the lead contributor to <strong>Nextly</strong>, an MIT-licensed, TypeScript-native CMS for Next.js, published on npm. My recent work includes building the backend for <strong>Rext AI</strong> (a multi-tenant SaaS on FastAPI), architecting the <strong>4RE Marketing Console</strong> (NestJS + Drizzle ORM), and engineering enterprise WordPress VIP platforms for clients like the <strong>PCI Security Standards Council</strong>.
             </p>
             <p className="mt-4">
-              I value clean code, technical ownership, and delivering solutions that drive real business impact.
+              I work remotely and am available across all time zones.
             </p>
           </div>
         </div>
@@ -96,19 +99,22 @@ export default function Home() {
             <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
               Professional Experience
             </p>
+            <p className="mt-4 text-gray-400">
+              Three roles at Revnix (formerly Revnix Technologies), from Frontend Engineer to Lead Backend Engineer.
+            </p>
           </div>
 
           <div className="space-y-12 border-l-2 border-white/5 md:border-none ml-4 md:ml-0 pl-4 md:pl-0">
             <ExperienceCard
-              title="Lead Backend Engineer"
-              company="Revnix, fmr. Revnix Technologies"
+              title="Lead Backend Engineer & Release Manager"
+              company="Revnix"
               period="Jan 2024 – Present"
-              location="Haripur District, Khyber Pakhtunkhwa, Pakistan"
-              description="Leading backend engineering and release management across multiple high-impact production systems, from multi-tenant SaaS platforms to open-source frameworks."
+              location="Haripur, Pakistan"
+              description="Lead backend engineering and releases across production systems, from a multi-tenant SaaS to an open-source CMS."
               highlights={[
-                "Rext AI: Led backend architecture for a multi-tenant SaaS using Python, FastAPI, and PostgreSQL with async APIs and background jobs.",
-                "4RE Marketing Console: Architected NestJS/Drizzle ORM backend with a sync engine ingesting external dealer and catalog XML feeds.",
-                "Nextly Framework: Lead contributor to an MIT-licensed Next.js CMS. Designed multi-database adapters, JWT auth with token rotation, and field-level RBAC; run release governance for every npm release.",
+                "Rext AI: Led the backend for a multi-tenant AI content-writing SaaS on Python, FastAPI and PostgreSQL: platform and workspace RBAC, session impersonation, audit logs, subscription billing, workspace credit sharing, Redis caching, webhooks, background jobs, monitoring and CI/CD.",
+                "4RE Marketing Console: Architected the NestJS/Drizzle ORM backend that replaced 4 Rivers Equipment's legacy console, live in production since June 2026, with a sync engine for dealer inventory and the John Deere catalog.",
+                "Nextly CMS: Lead contributor to an open-source CMS for Next.js. Designed multi-database adapters, JWT auth with token rotation, and field-level RBAC; run release governance for every npm release.",
                 "21st Century & 4 Rivers Equipment: Led team of 4 to migrate headless eCommerce platforms to Nextly CMS, cutting infra costs by 95%.",
                 "Team Leadership: Managing 8 engineers across 7 production environments serving 50K+ users. Reduced production incidents by 60%."
               ]}
@@ -117,10 +123,10 @@ export default function Home() {
 
             <ExperienceCard
               title="Full Stack WordPress Developer"
-              company="Revnix, fmr. Revnix Technologies"
+              company="Revnix"
               period="Feb 2022 – Jan 2024"
-              location="Haripur District, Khyber Pakhtunkhwa, Pakistan"
-              description="Engineered high-performance WordPress solutions for enterprise and mid-sized clients, including WordPress VIP multisite platforms."
+              location="Haripur, Pakistan"
+              description="Built WordPress platforms for enterprise and mid-sized clients, including WordPress VIP multisite."
               highlights={[
                 "PCI Security Standards Council (WordPress VIP): Engineered a multi-language, multisite enterprise platform with custom Elementor widgets extending core classes.",
                 "The National Pulse: Built custom WordPress theme for 100K+ monthly pageviews with Stripe, Google Pay, and Apple Pay.",
@@ -131,16 +137,15 @@ export default function Home() {
             />
 
             <ExperienceCard
-              title="Frontend Web Developer"
-              company="Revnix, fmr. Revnix Technologies"
+              title="Frontend Engineer"
+              company="Revnix"
               period="Mar 2021 – Feb 2022"
               location="Islamabad, Pakistan"
-              description="Contributed to multiple user-facing platforms by building fast, responsive, and SEO-friendly interfaces."
+              description="Built responsive, SEO-friendly interfaces for 8+ client projects."
               highlights={[
-                "Developed responsive frontends using React, JavaScript, HTML, CSS, and SCSS.",
-                "Integrated REST APIs to deliver smooth, dynamic user experiences across applications.",
-                "Enhanced website performance by 40% and accelerated UI delivery by 30% through reusable component libraries.",
-                "Improved SEO and load time across several client-facing websites."
+                "Built responsive frontends with React, Next.js and SCSS, integrated with REST APIs.",
+                "Cut load times by 40% (Time to Interactive from 6s to under 3.5s) with code splitting, lazy loading and component optimization.",
+                "Built reusable component libraries documented in Storybook, speeding up frontend delivery by 30%."
               ]}
               tech={['React', 'JavaScript', 'SCSS', 'UI/UX', 'SEO']}
             />
@@ -160,7 +165,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <ServiceCard
               title="System Architecture"
-              description="Designing scalable microservices, RESTful APIs, and data pipelines using Node.js, Nest.js, and Python."
+              description="Designing modular backends, REST APIs and data sync pipelines with Node.js, NestJS and Python."
               icon={Server}
             />
             <ServiceCard
@@ -170,7 +175,7 @@ export default function Home() {
             />
             <ServiceCard
               title="Enterprise CMS Solutions"
-              description="Architecting high-performance custom themes, plugins, and headless WordPress implementations."
+              description="Custom themes, plugins and headless WordPress builds for enterprise sites, including WordPress VIP."
               icon={Globe}
             />
             <ServiceCard
@@ -340,12 +345,13 @@ export default function Home() {
               status="live"
               summary="An AI writing platform that researches, writes and publishes SEO articles for agencies and site owners. I led the backend around the AI pipeline: the APIs, background jobs, billing and publishing."
               points={[
-                "Multi-tenant FastAPI backend with async APIs on PostgreSQL (SQLAlchemy)",
-                "Background jobs with APScheduler, including scheduled publishing",
-                "Subscription billing and checkout with LemonSqueezy",
-                "Publishing to WordPress (REST API) and Shopify (App Bridge)",
+                "Multi-tenant FastAPI backend on PostgreSQL with two-level RBAC: platform roles and workspace roles",
+                "Admin session impersonation and audit logs",
+                "Subscription billing with LemonSqueezy, and credit sharing from workspace owners to their members",
+                "Background jobs (APScheduler), Redis caching, webhooks and monitoring",
+                "Publishing to WordPress and Shopify; Docker deployments with GitHub Actions CI/CD",
               ]}
-              tech={['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'APScheduler', 'LemonSqueezy']}
+              tech={['Python', 'FastAPI', 'SQLAlchemy', 'PostgreSQL', 'Redis', 'APScheduler', 'LemonSqueezy', 'Docker', 'GitHub Actions']}
               links={[{ label: 'rext.ai', href: 'https://rext.ai' }]}
               image={{ src: '/projects/rext-ai.png', alt: 'Rext AI homepage' }}
             />
@@ -376,10 +382,10 @@ export default function Home() {
               }
             />
             <ProjectCard
-              title="Nextly"
+              title="Nextly CMS"
               role="Lead Contributor"
               status="open-source"
-              summary="Open-source, TypeScript-native CMS and app framework for Next.js. Self-hosted, with no vendor lock-in."
+              summary="Open-source, TypeScript-native CMS for Next.js. Self-hosted, with no vendor lock-in."
               points={[
                 "Database adapters for PostgreSQL, MySQL and SQLite",
                 "JWT auth with token rotation, OAuth and field-level permissions",
@@ -520,7 +526,7 @@ export default function Home() {
               </a>
             </div>
             <div className="mt-8 text-gray-400">
-              <p>Remote · Pakistan</p>
+              <p>Remote · Available across all time zones</p>
             </div>
           </div>
         </div>
