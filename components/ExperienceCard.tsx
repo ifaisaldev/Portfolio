@@ -14,7 +14,7 @@ interface ExperienceCardProps {
 const ExperienceCard = ({ title, company, period, location, description, highlights, tech }: ExperienceCardProps) => {
     return (
         <div className="glass p-8 rounded-lg relative border-l-4 border-blue-500 ml-4 md:ml-0">
-            <div className="absolute -left-[26px] top-8 w-4 h-4 rounded-full bg-blue-500 shadow-[0_0_10px_rgba(59,130,246,0.5)] hidden md:block" />
+            <div className="absolute -left-[26px] top-8 w-4 h-4 rounded-full bg-blue-500 hidden md:block" />
 
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
