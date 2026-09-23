@@ -11,7 +11,7 @@ const Footer = () => {
                             Faisal Mehmood<span className="text-blue-500">.</span>
                         </Link>
                         <p className="mt-2 text-gray-400 max-w-md">
-                            Senior Full Stack Engineer building scalable web applications and data pipelines.
+                            Senior Backend Engineer building scalable web applications and data pipelines.
                         </p>
                     </div>
 
