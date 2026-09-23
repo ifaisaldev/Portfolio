@@ -8,8 +8,11 @@ import { SITE_DESCRIPTION, SITE_TITLE, SITE_URL, personJsonLd } from "@/lib/site
 const inter = Inter({ subsets: ["latin"] });
 
 export const viewport: Viewport = {
-  themeColor: "#0f172a",
+  themeColor: "#f8fafc",
 };
+
+// Runs before first paint: light is the default; only a saved "dark" choice switches it.
+const themeScript = `(function(){try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');document.addEventListener('DOMContentLoaded',function(){var m=document.querySelector('meta[name="theme-color"]');if(m)m.setAttribute('content','#0f172a');});}}catch(e){}})();`;
 
 export const metadata: Metadata = {
   title: {
@@ -87,7 +90,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
+    <html lang="en" className="scroll-smooth" suppressHydrationWarning>
+      <head>
+        <script dangerouslySetInnerHTML={{ __html: themeScript }} />
+      </head>
       <body className={inter.className}>
         <script
           type="application/ld+json"

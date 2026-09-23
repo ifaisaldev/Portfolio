@@ -15,13 +15,13 @@ export default function Home() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             {/* Hero Content */}
             <div className="flex-1 text-center lg:text-left">
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-white">
-                <span className="block text-base md:text-lg font-semibold tracking-wide text-blue-400 mb-4">
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-6 text-fg">
+                <span className="block text-base md:text-lg font-semibold tracking-wide text-accent mb-4">
                   Faisal Mehmood · Senior Backend Engineer
                 </span>
-                Building Scalable <span className="text-blue-400">Backend Architectures</span> & Modern Web Solutions
+                Building Scalable <span className="text-accent">Backend Architectures</span> & Modern Web Solutions
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
+              <p className="text-xl md:text-2xl text-fg-2 mb-8 max-w-3xl">
                 I build APIs, data sync engines and CMS platforms with Node.js, NestJS, Next.js, Python and WordPress.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -33,14 +33,14 @@ export default function Home() {
                 </Link>
                 <Link
                   href="#projects"
-                  className="inline-flex items-center justify-center px-8 py-3 border border-white/10 text-base font-medium rounded-md text-white hover:bg-white/5 transition-all duration-200 backdrop-blur-sm"
+                  className="inline-flex items-center justify-center px-8 py-3 border border-line text-base font-medium rounded-md text-fg hover:bg-chip transition-all duration-200 backdrop-blur-sm"
                 >
                   View Projects <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
                 <a
                   href="/resume.pdf"
                   download
-                  className="inline-flex items-center justify-center px-8 py-3 border border-white/10 text-base font-medium rounded-md text-white hover:bg-white/5 transition-all duration-200 backdrop-blur-sm"
+                  className="inline-flex items-center justify-center px-8 py-3 border border-line text-base font-medium rounded-md text-fg hover:bg-chip transition-all duration-200 backdrop-blur-sm"
                 >
                   Download Resume
                 </a>
@@ -67,12 +67,12 @@ export default function Home() {
       <section id="about" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-12">
-            <h2 className="text-base text-blue-400 font-semibold tracking-wide uppercase">About Me</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-base text-accent font-semibold tracking-wide uppercase">About Me</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-fg sm:text-4xl">
               Engineering Scalable Solutions
             </p>
           </div>
-          <div className="prose prose-lg mx-auto text-gray-400">
+          <div className="prose prose-lg mx-auto text-muted">
             <p>
               I am a Senior Backend Engineer with over 5 years at Revnix, where I was promoted from Frontend Engineer to Lead Backend Engineer. I build backends with NestJS, Python/FastAPI and PostgreSQL, and ship full-stack features with Next.js, React and WordPress.
             </p>
@@ -90,16 +90,16 @@ export default function Home() {
       <section id="experience" className="py-20 relative">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-16">
-            <h2 className="text-base text-blue-400 font-semibold tracking-wide uppercase">Career Journey</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-base text-accent font-semibold tracking-wide uppercase">Career Journey</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-fg sm:text-4xl">
               Professional Experience
             </p>
-            <p className="mt-4 text-gray-400">
+            <p className="mt-4 text-muted">
               Three roles at Revnix (formerly Revnix Technologies), from Frontend Engineer to Lead Backend Engineer.
             </p>
           </div>
 
-          <div className="space-y-12 border-l-2 border-white/5 md:border-none ml-4 md:ml-0 pl-4 md:pl-0">
+          <div className="space-y-12 border-l-2 border-line md:border-none ml-4 md:ml-0 pl-4 md:pl-0">
             <ExperienceCard
               title="Lead Backend Engineer & Release Manager"
               company="Revnix"
@@ -152,8 +152,8 @@ export default function Home() {
       <section id="services" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-12">
-            <h2 className="text-base text-blue-400 font-semibold tracking-wide uppercase">Services</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-base text-accent font-semibold tracking-wide uppercase">Services</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-fg sm:text-4xl">
               What I Offer
             </p>
           </div>
@@ -201,20 +201,20 @@ export default function Home() {
       <section id="skills" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-12">
-            <h2 className="text-base text-blue-400 font-semibold tracking-wide uppercase">Skills</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-base text-accent font-semibold tracking-wide uppercase">Skills</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-fg sm:text-4xl">
               Technical Expertise
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="glass p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Code className="mr-2 text-blue-400" /> Frontend
+              <h3 className="text-xl font-bold text-fg mb-4 flex items-center">
+                <Code className="mr-2 text-accent" /> Frontend
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SCSS', 'Tailwind CSS', 'Material UI', 'Redux'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
+                  <span key={skill} className="px-3 py-1 bg-chip text-fg-2 rounded-full text-sm font-medium border border-line">
                     {skill}
                   </span>
                 ))}
@@ -222,12 +222,12 @@ export default function Home() {
             </div>
 
             <div className="glass p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Terminal className="mr-2 text-blue-400" /> Backend
+              <h3 className="text-xl font-bold text-fg mb-4 flex items-center">
+                <Terminal className="mr-2 text-accent" /> Backend
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['Node.js', 'Nest.js', 'Express.js', 'Python', 'FastAPI', 'PHP', 'GraphQL', 'REST APIs'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
+                  <span key={skill} className="px-3 py-1 bg-chip text-fg-2 rounded-full text-sm font-medium border border-line">
                     {skill}
                   </span>
                 ))}
@@ -235,12 +235,12 @@ export default function Home() {
             </div>
 
             <div className="glass p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Database className="mr-2 text-blue-400" /> Database & CMS
+              <h3 className="text-xl font-bold text-fg mb-4 flex items-center">
+                <Database className="mr-2 text-accent" /> Database & CMS
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['MongoDB', 'PostgreSQL', 'MySQL', 'Supabase', 'WordPress', 'Strapi', 'Payload CMS'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
+                  <span key={skill} className="px-3 py-1 bg-chip text-fg-2 rounded-full text-sm font-medium border border-line">
                     {skill}
                   </span>
                 ))}
@@ -248,12 +248,12 @@ export default function Home() {
             </div>
 
             <div className="glass p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Layers className="mr-2 text-blue-400" /> DevOps & Tools
+              <h3 className="text-xl font-bold text-fg mb-4 flex items-center">
+                <Layers className="mr-2 text-accent" /> DevOps & Tools
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['Docker', 'AWS', 'Git', 'GitHub', 'CI/CD', 'Postman', 'Vercel', 'Figma', 'Jira'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
+                  <span key={skill} className="px-3 py-1 bg-chip text-fg-2 rounded-full text-sm font-medium border border-line">
                     {skill}
                   </span>
                 ))}
@@ -261,12 +261,12 @@ export default function Home() {
             </div>
 
             <div className="glass p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Bot className="mr-2 text-blue-400" /> AI-Assisted Development
+              <h3 className="text-xl font-bold text-fg mb-4 flex items-center">
+                <Bot className="mr-2 text-accent" /> AI-Assisted Development
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['Claude Code', 'Cursor', 'Codex', 'GLM', 'CodeRabbit', 'Greptile', 'Context Engineering', 'Test-Driven Development'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
+                  <span key={skill} className="px-3 py-1 bg-chip text-fg-2 rounded-full text-sm font-medium border border-line">
                     {skill}
                   </span>
                 ))}
@@ -274,12 +274,12 @@ export default function Home() {
             </div>
 
             <div className="glass p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Globe className="mr-2 text-blue-400" /> Industry & Domain
+              <h3 className="text-xl font-bold text-fg mb-4 flex items-center">
+                <Globe className="mr-2 text-accent" /> Industry & Domain
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['E-Commerce', 'FinTech', 'News & Media', 'Enterprise SaaS', 'Payment Gateways', 'Content Platforms', 'Data Pipelines'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
+                  <span key={skill} className="px-3 py-1 bg-chip text-fg-2 rounded-full text-sm font-medium border border-line">
                     {skill}
                   </span>
                 ))}
@@ -293,8 +293,8 @@ export default function Home() {
       <section id="how-i-work" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-12">
-            <h2 className="text-base text-blue-400 font-semibold tracking-wide uppercase">How I Work</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-base text-accent font-semibold tracking-wide uppercase">How I Work</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-fg sm:text-4xl">
               AI-Assisted, Test-Driven Development
             </p>
           </div>
@@ -327,8 +327,8 @@ export default function Home() {
       <section id="projects" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="lg:text-center mb-12">
-            <h2 className="text-base text-blue-400 font-semibold tracking-wide uppercase">Projects</h2>
-            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-white sm:text-4xl">
+            <h2 className="text-base text-accent font-semibold tracking-wide uppercase">Projects</h2>
+            <p className="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-fg sm:text-4xl">
               Featured Work
             </p>
           </div>
@@ -442,7 +442,7 @@ export default function Home() {
           </div>
 
           <div className="mt-16">
-            <h3 className="text-lg font-semibold text-white mb-6">More work</h3>
+            <h3 className="text-lg font-semibold text-fg mb-6">More work</h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {[
                 {
@@ -468,9 +468,9 @@ export default function Home() {
                 },
               ].map((item) => (
                 <div key={item.title} className="glass rounded-lg p-5 flex flex-col">
-                  <h4 className="font-semibold text-white">{item.title}</h4>
-                  <p className="mt-2 text-sm text-gray-400 leading-relaxed">{item.summary}</p>
-                  <p className="mt-3 text-xs text-gray-400">{item.tech}</p>
+                  <h4 className="font-semibold text-fg">{item.title}</h4>
+                  <p className="mt-2 text-sm text-muted leading-relaxed">{item.summary}</p>
+                  <p className="mt-3 text-xs text-muted">{item.tech}</p>
                   {item.links.length > 0 && (
                     <div className="mt-auto pt-4 flex flex-wrap gap-x-4 gap-y-1">
                       {item.links.map((link) => (
@@ -479,7 +479,7 @@ export default function Home() {
                           href={link.href}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="inline-flex items-center text-sm font-medium text-blue-400 hover:text-blue-300 transition-colors"
+                          className="inline-flex items-center text-sm font-medium text-accent hover:text-accent-hover transition-colors"
                         >
                           {link.label}
                           <ArrowUpRight className="ml-1 h-4 w-4" />
@@ -498,10 +498,10 @@ export default function Home() {
       <section id="contact" className="py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="max-w-3xl mx-auto text-center">
-            <h2 className="text-3xl font-extrabold text-white sm:text-4xl mb-4">
+            <h2 className="text-3xl font-extrabold text-fg sm:text-4xl mb-4">
               Get In Touch
             </h2>
-            <p className="text-lg text-gray-400 mb-8">
+            <p className="text-lg text-muted mb-8">
               I&apos;m always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
             </p>
             <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -515,12 +515,12 @@ export default function Home() {
                 href="https://linkedin.com/in/faisal-mehmood-dev"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center px-8 py-3 border border-white/10 text-base font-medium rounded-md text-white hover:bg-white/5 transition-all duration-200 backdrop-blur-sm"
+                className="inline-flex items-center justify-center px-8 py-3 border border-line text-base font-medium rounded-md text-fg hover:bg-chip transition-all duration-200 backdrop-blur-sm"
               >
                 LinkedIn Profile
               </a>
             </div>
-            <div className="mt-8 text-gray-400">
+            <div className="mt-8 text-muted">
               <p>Remote · Available across all time zones</p>
             </div>
           </div>

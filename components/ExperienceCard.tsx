@@ -18,10 +18,10 @@ const ExperienceCard = ({ title, company, period, location, description, highlig
 
             <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
-                    <h3 className="text-2xl font-bold text-white">{title}</h3>
-                    <h4 className="text-xl text-blue-400 font-medium mt-1">{company}</h4>
+                    <h3 className="text-2xl font-bold text-fg">{title}</h3>
+                    <h4 className="text-xl text-accent font-medium mt-1">{company}</h4>
                 </div>
-                <div className="flex flex-col items-start md:items-end mt-2 md:mt-0 text-gray-400 text-sm space-y-1">
+                <div className="flex flex-col items-start md:items-end mt-2 md:mt-0 text-muted text-sm space-y-1">
                     <div className="flex items-center">
                         <Calendar className="w-4 h-4 mr-2" />
                         {period}
@@ -33,15 +33,15 @@ const ExperienceCard = ({ title, company, period, location, description, highlig
                 </div>
             </div>
 
-            <p className="text-gray-300 mb-6 leading-relaxed">
+            <p className="text-fg-2 mb-6 leading-relaxed">
                 {description}
             </p>
 
             <div className="mb-6">
-                <h5 className="text-sm font-semibold text-gray-200 mb-3 uppercase tracking-wider">Key Achievements</h5>
+                <h5 className="text-sm font-semibold text-fg-2 mb-3 uppercase tracking-wider">Key Achievements</h5>
                 <ul className="space-y-2">
                     {highlights.map((highlight, index) => (
-                        <li key={index} className="flex items-start text-gray-400 text-sm">
+                        <li key={index} className="flex items-start text-muted text-sm">
                             <span className="mr-2 mt-1.5 w-1.5 h-1.5 bg-blue-500 rounded-full flex-shrink-0" />
                             {highlight}
                         </li>
@@ -53,7 +53,7 @@ const ExperienceCard = ({ title, company, period, location, description, highlig
                 {tech.map((item, index) => (
                     <span
                         key={index}
-                        className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-medium rounded-full border border-white/10"
+                        className="px-3 py-1 bg-chip text-fg-2 text-xs font-medium rounded-full border border-line"
                     >
                         {item}
                     </span>

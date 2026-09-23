@@ -1,26 +1,67 @@
 @import "tailwindcss";
 
+/* `dark:` variants follow the .dark class on <html> (set by the theme script), not the OS setting. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* Light is the default theme; .dark swaps the same tokens. */
 :root {
-  --background: #0f172a;
-  --foreground: #f8fafc;
+  color-scheme: light;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-hover: #f1f5f9;
+  --panel: #f1f5f9;
+  --fg: #0f172a;
+  --fg-2: #334155;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --line-strong: #cbd5e1;
+  --chip: #f1f5f9;
+  --accent: #2563eb;
+  --accent-hover: #1d4ed8;
+}
+
+.dark {
+  color-scheme: dark;
+  --bg: #0f172a;
   --surface: #131c31;
   --surface-hover: #172239;
-  --border: rgba(148, 163, 184, 0.12);
-  --border-hover: rgba(148, 163, 184, 0.24);
+  --panel: rgba(15, 23, 42, 0.6);
+  --fg: #f8fafc;
+  --fg-2: #d1d5db;
+  --muted: #9ca3af;
+  --line: rgba(148, 163, 184, 0.12);
+  --line-strong: rgba(148, 163, 184, 0.24);
+  --chip: rgba(255, 255, 255, 0.05);
+  --accent: #60a5fa;
+  --accent-hover: #93c5fd;
+}
+
+@theme inline {
+  --color-bg: var(--bg);
+  --color-surface: var(--surface);
+  --color-panel: var(--panel);
+  --color-fg: var(--fg);
+  --color-fg-2: var(--fg-2);
+  --color-muted: var(--muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-chip: var(--chip);
+  --color-accent: var(--accent);
+  --color-accent-hover: var(--accent-hover);
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--fg);
+  background: var(--bg);
 }
 
-/* Solid card surface (name kept from the original glass style so components don't change). */
+/* Card surface (name kept from the original glass style so components don't change). */
 .glass {
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--line);
 }
 
 .glass-hover:hover {
   background: var(--surface-hover);
-  border-color: var(--border-hover);
+  border-color: var(--line-strong);
 }
