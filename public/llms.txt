@@ -4,7 +4,7 @@
 Senior Backend Engineer with over 5 years of experience building enterprise web platforms and developer tooling across the full stack.
 Lead contributor to Nextly, an open-source CMS for Next.js published on npm.
 Currently leading backend architecture for a team of 8 engineers across 7 production environments serving 50K+ users.
-Based in Haripur, KPK, Pakistan.
+Based in Haripur, Pakistan. Works remotely and is available across all time zones.
 
 ## Skills
 - **Frontend**: React, Next.js, TypeScript, Tailwind CSS, Shadcn/UI

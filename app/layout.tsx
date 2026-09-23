@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     default: "Faisal Mehmood - Senior Backend Engineer",
     template: "%s | Faisal Mehmood"
   },
-  description: "Senior Backend Engineer specializing in scalable architectures, Node.js, Next.js, Python, WordPress, and modern web technologies. Expert in building high-performance applications with focus on E-Commerce, FinTech, and Enterprise SaaS.",
+  description: "Senior Backend Engineer specializing in Node.js, NestJS, Next.js, Python and WordPress. Builds APIs, data sync engines and CMS platforms for e-commerce, media and SaaS teams. Remote, available across all time zones.",
   keywords: [
     "Senior Backend Engineer",
     "Backend Engineer",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "/",
     title: "Faisal Mehmood - Senior Backend Engineer",
-    description: "Senior Backend Engineer specializing in scalable architectures, Node.js, Next.js, Python, WordPress, and modern web technologies.",
+    description: "Senior Backend Engineer specializing in Node.js, NestJS, Next.js, Python and WordPress.",
     siteName: "Faisal Mehmood Portfolio",
     images: [
       {
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Faisal Mehmood - Senior Backend Engineer",
-    description: "Senior Backend Engineer specializing in scalable architectures, Node.js, Next.js, Python, WordPress, and modern web technologies.",
+    description: "Senior Backend Engineer specializing in Node.js, NestJS, Next.js, Python and WordPress.",
     creator: "@ifaisaldev",
     images: ["/og-image.png"],
   },
