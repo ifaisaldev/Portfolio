@@ -13,7 +13,6 @@ export default function Home() {
       <section className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
         <div className="absolute top-0 left-0 w-full h-full overflow-hidden -z-10">
           <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-blue-600/20 blur-[100px]" />
-          <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] rounded-full bg-purple-600/20 blur-[100px]" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,7 +23,7 @@ export default function Home() {
                 <span className="block text-base md:text-lg font-semibold tracking-wide text-blue-400 mb-4">
                   Faisal Mehmood · Senior Backend Engineer
                 </span>
-                Building Scalable <span className="text-[#4FA0FC]">Backend Architectures</span> & Modern Web Solutions
+                Building Scalable <span className="text-blue-400">Backend Architectures</span> & Modern Web Solutions
               </h1>
               <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl">
                 I build APIs, data sync engines and CMS platforms with Node.js, NestJS, Next.js, Python and WordPress.
@@ -219,7 +218,7 @@ export default function Home() {
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['React', 'Next.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS', 'SCSS', 'Tailwind CSS', 'Material UI', 'Redux'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-blue-500/10 text-blue-300 rounded-full text-sm font-medium border border-blue-500/20">
+                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
                     {skill}
                   </span>
                 ))}
@@ -228,11 +227,11 @@ export default function Home() {
 
             <div className="glass p-6 rounded-lg">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Terminal className="mr-2 text-green-400" /> Backend
+                <Terminal className="mr-2 text-blue-400" /> Backend
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['Node.js', 'Nest.js', 'Express.js', 'Python', 'FastAPI', 'PHP', 'GraphQL', 'REST APIs'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-green-500/10 text-green-300 rounded-full text-sm font-medium border border-green-500/20">
+                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
                     {skill}
                   </span>
                 ))}
@@ -241,11 +240,11 @@ export default function Home() {
 
             <div className="glass p-6 rounded-lg">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Database className="mr-2 text-purple-400" /> Database & CMS
+                <Database className="mr-2 text-blue-400" /> Database & CMS
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['MongoDB', 'PostgreSQL', 'MySQL', 'Supabase', 'WordPress', 'Strapi', 'Payload CMS'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-purple-500/10 text-purple-300 rounded-full text-sm font-medium border border-purple-500/20">
+                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
                     {skill}
                   </span>
                 ))}
@@ -254,11 +253,11 @@ export default function Home() {
 
             <div className="glass p-6 rounded-lg">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Layers className="mr-2 text-orange-400" /> DevOps & Tools
+                <Layers className="mr-2 text-blue-400" /> DevOps & Tools
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['Docker', 'AWS', 'Git', 'GitHub', 'CI/CD', 'Postman', 'Vercel', 'Figma', 'Jira'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-orange-500/10 text-orange-300 rounded-full text-sm font-medium border border-orange-500/20">
+                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
                     {skill}
                   </span>
                 ))}
@@ -267,11 +266,11 @@ export default function Home() {
 
             <div className="glass p-6 rounded-lg">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Bot className="mr-2 text-cyan-400" /> AI-Assisted Development
+                <Bot className="mr-2 text-blue-400" /> AI-Assisted Development
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['Claude Code', 'Cursor', 'Codex', 'GLM', 'CodeRabbit', 'Greptile', 'Context Engineering', 'Test-Driven Development'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-cyan-500/10 text-cyan-300 rounded-full text-sm font-medium border border-cyan-500/20">
+                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
                     {skill}
                   </span>
                 ))}
@@ -280,11 +279,11 @@ export default function Home() {
 
             <div className="glass p-6 rounded-lg">
               <h3 className="text-xl font-bold text-white mb-4 flex items-center">
-                <Globe className="mr-2 text-pink-400" /> Industry & Domain
+                <Globe className="mr-2 text-blue-400" /> Industry & Domain
               </h3>
               <div className="flex flex-wrap gap-2">
                 {['E-Commerce', 'FinTech', 'News & Media', 'Enterprise SaaS', 'Payment Gateways', 'Content Platforms', 'Data Pipelines'].map(skill => (
-                  <span key={skill} className="px-3 py-1 bg-pink-500/10 text-pink-300 rounded-full text-sm font-medium border border-pink-500/20">
+                  <span key={skill} className="px-3 py-1 bg-white/5 text-gray-300 rounded-full text-sm font-medium border border-white/10">
                     {skill}
                   </span>
                 ))}

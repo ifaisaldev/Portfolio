@@ -25,7 +25,7 @@ interface ProjectCardProps {
 
 const statusStyles: Record<ProjectStatus, { label: string; dot: string }> = {
     live: { label: 'Live', dot: 'bg-green-400' },
-    'open-source': { label: 'Open source', dot: 'bg-purple-400' },
+    'open-source': { label: 'Open source', dot: 'bg-blue-400' },
     private: { label: 'In production · Private', dot: 'bg-amber-400' },
 };
 
@@ -81,7 +81,7 @@ const ProjectCard = ({ title, role, period, status, summary, points, tech, links
                     {tech.map((item) => (
                         <span
                             key={item}
-                            className="px-3 py-1 bg-blue-500/10 text-blue-300 text-xs font-medium rounded-full border border-blue-500/20"
+                            className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-medium rounded-full border border-white/10"
                         >
                             {item}
                         </span>

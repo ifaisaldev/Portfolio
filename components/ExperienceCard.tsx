@@ -53,7 +53,7 @@ const ExperienceCard = ({ title, company, period, location, description, highlig
                 {tech.map((item, index) => (
                     <span
                         key={index}
-                        className="px-3 py-1 bg-blue-500/10 text-blue-300 text-xs font-medium rounded-full border border-blue-500/20"
+                        className="px-3 py-1 bg-white/5 text-gray-300 text-xs font-medium rounded-full border border-white/10"
                     >
                         {item}
                     </span>
